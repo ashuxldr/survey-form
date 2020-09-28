@@ -1,0 +1,93 @@
+#title{
+    font-size: 70px;
+    font-family: fantasy;
+}
+#description{
+    font-size: 25px;
+}
+#name{
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#name-label{
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#email{
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#email-label{
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#number{
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#number-label{
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#dropdown{
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#xyz{
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.fonts{
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#submit{
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkgrey);
+    background-image:linear-gradient( 115deg, rgba(226, 226, 226, 0.5), rgba(238, 238, 238, 0.788) ),url(https://images.unsplash.com/photo-1590845947376-2638caa89309?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=1600://images.unsplash.com/photo-1564049489314-60d154ff107d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=1600);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+::before, ::after {
+    box-sizing: border-box;
+}
+#survey-form {
+    display: block;
+    margin-top: 0em;
+    padding: 2.5rem;
+    background: var(--color-darkblue-alpha);
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-white);
+    margin: 0;
+}
+#description{
+    font-style: italic;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+body div{
+    width: 100%;
+    height: auto;
+}
+.d-flex{
+    display:flex;
+        width: 70%;
+        height: auto;
+
+}

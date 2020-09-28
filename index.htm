@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="index.css">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>AxR Survey Form</title>
+</head>
+
+<body translate="no">
+    <div>
+        <header class="header">
+            <h1 id="title" class="text-center">AxR Officials Survey Form</h1>
+            <p id="description" class="description text-center"><strong>
+                Thank you for giving your time to help us improve the platform
+            </strong></p>
+        </header>
+        <form id="survey-form" class="container">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control " placeholder="Enter your name"
+                    required="">
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email"
+                    required="">
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Phone Number<span class="clue">(optional)</span></label>
+                <input type="number" name="age" id="number"  min="1" max="9999999999" class="form-control" placeholder="Enter your Phone Number">
+            </div>
+            <div class="form-group">
+                <p id="xyz">Which option best describes your current role on our discord server?</p>
+                <select id="dropdown" name="role" class="form-control" required="">
+                    <option disabled="" selected="" value="">Select current role</option>
+                    <option value="family">AxR Family</option>
+                    <option value="army">AxR Army</option>
+                    <option value="t-3">AxR T-3 Guest</option>
+                    <option value="elite">AxR Elite-Scrims Guest</option>
+                    <option value="pro">AxR Pro-Scrims Guest</option>
+
+                </select>
+            </div>
+
+            <div class="form-group fonts">
+                <p>Would you recommend our server to a friend?</p>
+                <label>
+                    <input name="user-recommend" value="definitely" type="radio" class="input-radio"
+                        checked="">Definitely</label>
+                <label>
+                    <input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe</label>
+
+                <label><input name="user-recommend" value="no" type="radio" class="input-radio">No</label>
+            </div>
+
+            <div class="form-group fonts">
+                <p>
+                    What is your favorite feature of AxR Officials?
+                </p>
+                <select id="most-like" name="mostLike" class="form-control" required="">
+                    <option disabled="" selected="" value="">Select an option</option>
+                    <option value="Scrims">Scrims</option>
+                    <option value="Tourneys">Tourneys</option>
+                    <option value="Management">Management</option>
+                    <option value="lineups">Lineups</option>
+                    <option value="streaming">Streaming</option>
+                </select>
+            </div>
+
+            <div class="form-group fonts">
+                <p>
+                    What would you like to see improved?
+                    <span class="clue">(Check all that apply)</span>
+                </p>
+
+                <label><input name="prefer" value="Management" type="checkbox" class="input-checkbox">
+                Management</label>
+                <label>
+                    <input name="prefer" value="Moderators" type="checkbox" class="input-checkbox">Moderators</label>
+                <label><input name="prefer" value="T-3 Scrims" type="checkbox" class="input-checkbox">
+                    T-3 Scrims</label>
+                <label><input name="prefer" value="Elite-Scrims" type="checkbox" class="input-checkbox">Elite-Scrims</label>
+                <label><input name="prefer" value="Pro-Scrims" type="checkbox" class="input-checkbox">
+                    Pro-Scrims</label>
+                <label><input name="prefer" value="Tournaments" type="checkbox" class="input-checkbox">Tournaments
+                    </label>
+                <label><input name="prefer" value="streaming" type="checkbox" class="input-checkbox">Streaming</label>
+                <label><input name="prefer" value="invitationals" type="checkbox" class="input-checkbox">Invitational
+                    Scrims</label>
+                <label><input name="prefer" value="Cross-Country" type="checkbox" class="input-checkbox">Cross-Country Scrims</label>
+                <label><input name="prefer" value="lineups" type="checkbox" class="input-checkbox">Improved Lineups</label>
+            </div>
+
+            <div class="form-group fonts ">
+                <p>Any comments or suggestions?</p>
+                <textarea id="comments" class="input-textarea" name="comment"
+                    placeholder="Enter your comment here..."></textarea>
+            </div>
+
+            <div class="form-group fonts" id="button1">
+                <button type="submit" id="submit" class="btn btn-primary">SUBMIT</button>
+            </div>
+        </form>
+    </div>
+
+</html>
